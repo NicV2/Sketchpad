@@ -1,6 +1,5 @@
 
 
-
 $(document).ready(function(){
 
 //Appends a sketchpad div (block) to .container class element
