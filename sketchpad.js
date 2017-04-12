@@ -28,25 +28,27 @@ $(".sketchpad").hover(function()
 //Click on "clear grid" button, user prompt for squares per side
 $("#button").click(function(){
   var squares=prompt("Time for a new board! How many squares per side this time?");
-       $(".container").empty();
-       console.log(squares);
-  for (var k=0; k<squares; k++)
+  $(".container").empty();
+  console.log(squares);
+   var newHeightWidth = 48/squares +"em"; //gets new heigh/width of each square
+   console.log(newHeightWidth);
+  for(var k=0; k<squares; k++)
   {
-  	for (var l=0; l<squares; l++)
+  	for (m=0; m<squares; m++)
   	{
-  		var newSquare=$("<div>Hello</div>");
-  		$("newSquare").width("48em/squares");
-  		$("newSquare").height("48em/squares");
-  		$("newSquare").css("background-color", "#7d9ec0");
-  		$("newSquare").css("border-style", "solid");
-		$("newSquare").css("border-width", ".25px");
-		$("newSquare").css("display", "inline-block");
-		$("newSquare").css("float", "left");
-		$("newSquare").appendTo(".container");
+  	var $newSquare = $("<div></div>");
+  	$newSquare.appendTo(".container");
+  	 $newSquare.css("background-color", "#7d9ec0");
+     $newSquare.css("border-style", "solid");
+     $newSquare.css("border-width", ".25px");
+     $newSquare.css("height", newHeightWidth);
+     $newSquare.css("width", newHeightWidth);
+     $newSquare.css("display", "inline-block");
+     $newSquare.css("float", "left");
 
-  		console.log("added");
-  	}
-  }
+  	console.log(k);
+    };
+  };
 });
 
 
