@@ -30,15 +30,16 @@ $("#button").click(function(){
   var squares=prompt("Time for a new board! How many squares per side this time?");
   $(".container").empty();
   console.log(squares);
-   var newHeightWidth = 48/squares +"em"; //gets new heigh/width of each square
+   var newHeightWidth = 48/squares +"em"; //gets new height/width of each square
    console.log(newHeightWidth);
+    
   for(var k=0; k<squares; k++)
   {
   	for (m=0; m<squares; m++)
   	{
-  	var $newSquare = $("<div></div>");
+  	var $newSquare = $("<div class=resetSketchpad></div>");
   	$newSquare.appendTo(".container");
-  	 $newSquare.css("background-color", "#7d9ec0");
+  	 $(".resetSketchpad").css("background-color", "#7d9ec0");
      $newSquare.css("border-style", "solid");
      $newSquare.css("border-width", ".25px");
      $newSquare.css("height", newHeightWidth);
@@ -48,8 +49,17 @@ $("#button").click(function(){
 
   	console.log(k);
     };
-  };
+  };  
+
+  $(".resetSketchpad").hover(function()
+  {
+  	$(this).css("background-color", "#ba2581");
+  });
 });
+
+
+
+
 
 
 });
