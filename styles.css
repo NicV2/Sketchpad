@@ -1,0 +1,60 @@
+*{
+	
+	box-sizing: border-box;
+	font-family: "Cabin Sketch", cursive;
+}
+
+h1{
+	font-size: 6em;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	width: 100%;
+	margin-top: -1.5em;
+}
+
+#button{
+	display: inline-block;
+	text-align: center;
+	padding: .5em 1.5em;
+    font-size: .75em;
+}
+
+.container{
+	height: 48em;
+	width: 48em;
+	margin: 0 auto;
+}
+
+
+.sketchpad{
+	width: 3em;
+	height: 3em;
+	border-style: solid;
+	border-width: .25px;
+	background-color: #7d9ec0;
+	display: inline-block;
+	float:left;
+
+}
+/*
+.sketchpad2{
+	width: 40px;
+	height: 40px;
+	background-color: #7d9ec0;
+    display: inline;
+}
+
+.sketchpad3{
+	width: 40px;
+	height: 40px;
+	background-color:#ba2581;
+}
+
+.sketchpad4{
+	width: 40px;
+	height: 40px;
+	background-color: #d8a72b;
+}
